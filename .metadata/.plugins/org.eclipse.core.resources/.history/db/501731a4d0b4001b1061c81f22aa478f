@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class DriverClass
+{
+
+	public static void main(String[] args) throws Exception 
+	{
+		String a;
+		System.out.println("1. Banani");
+		Scanner loc1 = new Scanner (System.in);
+		a = loc1.nextLine();
+	    if (a.equals("Banani"))
+		
+		{
+			Banani obj1 = new Banani();
+			obj1.banani();
+		}
+		else if (a.equals("Dhanmondi"))
+		{
+			Dhanmondi obj2 = new Dhanmondi();
+			obj2.dhanmondi();
+		}
+		else if (a.equals("Mirpur"))
+		{
+			Mirpur obj3 = new Mirpur();
+			obj3.mirpur();
+		}
+		else 
+		{
+			throw new Exception("Enther the name according the list.");
+		}
+		}
+		
+		/*switch(a)
+		{
+			case ("Banani"):
+			{
+				Banani obj1 = new Banani();
+				obj1.banani();
+			}
+			case ("Dhanmndi"):
+			{
+				Dhanmondi obj2 = new Dhanmondi();
+				obj2.dhanmondi();
+			}
+			case ("Mirpur"):
+			{
+				Mirpur obj3 = new Mirpur();
+				obj3.mirpur();
+			}
+			default:
+			{
+			   System.out.println("Thank you for visiting our application!");
+			}
+		}*/
+}

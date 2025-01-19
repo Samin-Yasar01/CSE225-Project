@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class DriverClass
+{
+
+	public static void main(String[] args) 
+	{
+		String a;
+		System.out.println("1. Banani");
+		Scanner loc1 = new Scanner (System.in);
+		a = loc1.nextLine();
+		if (a.equals("Banani"))
+		{
+			Banani obj1 = new Banani();
+			obj1.banani();
+		}
+		/*switch(a)
+		{
+			case ("Banani"):
+			{
+				Banani obj1 = new Banani();
+				obj1.banani();
+			}
+			case ("Dhanmndi"):
+			{
+				Dhanmondi obj2 = new Dhanmondi();
+				obj2.dhanmondi();
+			}
+			case ("Mirpur"):
+			{
+				Mirpur obj3 = new Mirpur();
+				obj3.mirpur();
+			}
+			default:
+			{
+			   System.out.println("Thank you for visiting our application!");
+			}
+		}*/
+		
+	}
+
+}
